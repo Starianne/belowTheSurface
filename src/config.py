@@ -20,7 +20,7 @@ COIN_IMG = os.path.join(ASSET_DIR, "coin.png")
 COIN_IMG_UP = os.path.join(ASSET_DIR, "coin_upside.png")
 
 OB_IMG = os.path.join(ASSET_DIR, "obstacle.png")
-OB_IMG_UP = os.path.join(ASSET_DIR, "coin_upside.png")
+OB_IMG_UP = os.path.join(ASSET_DIR, "obstacle_upside.png")
 
 PORTAL_IMG = os.path.join(ASSET_DIR, "portal.png")
 PORTAL_IMG_UP = os.path.join(ASSET_DIR, "portal_upside.png")
