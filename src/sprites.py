@@ -15,7 +15,7 @@ class SpriteSheet:
             self.frames_list.append(frame)
 
 class AnimatedSprite(pygame.sprite.Sprite):
-    def __init__(self, spritesheet: SpriteSheet, fps=10):
+    def __init__(self, spritesheet: SpriteSheet, fps=0.01):
         super().__init__()
         self.sheet = spritesheet
         self.fps = fps
@@ -26,7 +26,7 @@ class AnimatedSprite(pygame.sprite.Sprite):
     
     def update(self, dt):
         self.timer += dt
-        if self.timer >= 1000 / self.fps:
+        if self.timer >= 3750 / self.fps:
             self.timer = 0
             self.index = (self.index + 1) % len(self.sheet.frames_list)
             self.image = self.sheet.frames_list[self.index]
